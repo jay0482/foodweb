@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Organic Food Website Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+        body {
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        .j_fs_70 {
+            font-size: 70px;
+        }
+        
+        .j_tracking_5 {
+            letter-spacing: 5px;
+        }
+        
+        aside {
+            z-index: 3;
+            visibility: hidden;
+            position: fixed;
+            opacity: 0;
+            transition: 0.5s opacity, 0.5s visibility;
+        }
+        
+        aside .j_menus {
+            transform: translateX(-300px);
+            transition: 0.5s transform;
+        }
+        
+        aside.active {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        aside.active .j_menus {
+            transform: translateX(0);
+        }
+        
+        .j_banner {
+            width: 90%;
+            height: 900px;
+            margin-top: -654px;
+            margin-bottom: 100px;
+        }
+        
+        .j_banner .j_dish {
+            left: 100px;
+            width: 50%;
+            margin-left: 10%;
+            transform: translateX(-87px);
+        }
+        
+        .j_content {
+            width: 72%;
+            margin: auto;
+            margin-top: -500px;
+            margin-left: 20%;
+        }
+        
+        .j_content_shape {
+            left: 300px;
+            color: #FFFFFF;
+            top: 80px;
+            padding-left: 80px;
+        }
+        
+        header {
+            background: #f2f2f2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .j_recipes .title {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 5px;
+        }
+        
+        .j_recipe_content {
+            width: 50%;
+        }
+        
+        .j_recipe_content p {
+            font-weight: 500;
+        }
+        
+        .j_pricing {
+            height: 460px;
+        }
+        
+        .j_price_img_box img {
+            object-fit: cover;
+            object-position: 0px -514px;
+        }
+        
+        .j_pricing_container {
+            top: 80%;
+        }
+        
+        .j_snacks {
+            margin-top: 330px;
+        }
+    </style>
+    <link rel="stylesheet" href="foodtemplate.css" />
+</head>
+
+<body>
+    <header class="text-center">
+        <i class="fa fa-bars" id="toggle_sidebar" aria-hidden="true"></i>
+    </header>
+    <aside style="height: 100vh; width: 100%; background-color: rgba(0, 0, 0, 0.5)" class="text-white  top-0">
+        <div style="width: 15%; background: black" class="h-100 j_menus">
+            <div class="text-end">
+                <button id="toggle_sidebar_close" class="border-0 bg-transparent text-white fs-4 p-2">
+              X
+            </button>
+            </div>
+            <ul class="nav flex-column text-center mt-4">
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <!-- //main  -->
+    <main>
+        <div style="background: #f2f2f2">
+            <section class="j_banner py-2 mt-0 position-relative ">
+                <div style="z-index: 1" class="j_dish position-relative">
+                    <img width="100%" height="550px" src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/5f79df0d04b550e1b52722c9/food.png" alt="" />
+                </div>
+                <div class="j_content position-relative">
+                    <svg style="fill: #ffc002" class="u-svg-content __web-inspector-hide-shortcut__" viewBox="0 0 160 150" x="0px" y="0px" id="svg-d816">
+                <path
+                  d="M121.1,18C110.7,1.5,89.8-4.6,72.6,3.7c-10.5,5-17.7,14.2-20.8,24.7C48.4,39.9,42.4,48,28.3,55.5
+              c-50.6,26.9-27.3,99.4,22,84.7c14.3-4.2,29.7-1.4,43.2,5.1c13.3,6.5,29.3,6.4,43.2-1.8c21-12.5,29.3-40.1,18.8-62.7
+              c-2.5-5.4-5.9-10.1-9.8-14c-9.4-9.3-16.4-21-18.8-34.2C125.9,27.6,124,22.6,121.1,18z"
+                ></path>
+              </svg>
+                    <div class="position-absolute j_content_shape text-white h-75 gap-2 d-flex justify-content-end flex-column align-items-start">
+                        <div class="time">
+                            <h1 style="font-size: 120px; position:relative">Salad</h1>
+                            <h5>Time to Get Healthy & Active</h5>
+                        </div>
+                        <p style="text-align: justify; word-break: keep-all; font-size: 14px;" class="me-5">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse<br> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br>cupidatat non proident, sunt in culpa qui officia deserunt,<br> mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="container my-5">
+            <h4 class="fw-light">OUR MENU</h4>
+            <h1 class="j_fs_70 fw-bold">Delicious From The Chef</h1>
+            <div class="row">
+                <div class="col-12 col-lg-6 mt-5">
+                    <div class="px-4">
+                        <h4 class="fw-light mb-4">PEAR SALAD / $11</h4>
+                        <p>
+                            Reid’s Orchard Pears / Bitter Greens / Granola / Big Firefly / Farms Black and Blue / Pine Nut Vinaigrette
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-5">
+                    <div class="px-4">
+                        <h4 class="fw-light mb-4">BRODETTO DI PESCE / $9</h4>
+                        <p>
+                            Adriatic Seafood Soup / Clams / Prawns / Livornese / Langoustine Scallop / Celery / Olive
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-5">
+                    <div class="px-4">
+                        <h4 class="fw-light mb-4">FARM GREENS / $9</h4>
+                        <p>Honey Vinaigrette / House Cheese Crouton / Fine Herbs</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-5">
+                    <div class="px-4">
+                        <h4 class="fw-light mb-4">GRILLED KALE / $9</h4>
+                        <p>Bitter Greens / House Cheese Crouton / Kamon Iberico</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-5">
+                    <div class="px-4">
+                        <h4 class="fw-light mb-4">RICOTTA GNUD / $18</h4>
+                        <p>
+                            Marinated Sardine / Red Currant / Chanterelles / Pine Nuts / Mantecato Vitello / Fennel / Olive / Pepitas
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 mt-5">
+                    <div class="px-4">
+                        <h4 class="fw-light mb-4">CANESTRELLI / $18</h4>
+                        <p>
+                            Reid Orchatd Pears / Bitter Greens / House Cheese Crouton / Marinated Sardine / Chanterelles / Clams
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- casear salad -->
+        <section class="j_recipes container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex gap-2 mt-5">
+                        <div style="width: 150px; height: 150px">
+                            <img width="100%" height="100%" style="object-fit: contain" src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/981defef509954568cefdcdb/3.png" alt="" />
+                        </div>
+                        <div class="j_recipe_content">
+                            <h5 class="title">CAESAR SALAD</h5>
+                            <h1 class="fw-bold my-3">$20</h1>
+                            <p>
+                                Sample text. Click to select the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex gap-2 mt-5">
+                        <div style="width: 150px; height: 150px">
+                            <img width="100%" height="100%" style="object-fit: contain" src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/0372a1a4174b513c8fa348b8/4.png" alt="" />
+                        </div>
+                        <div class="j_recipe_content">
+                            <h5 class="title">GREEK SALAD</h5>
+                            <h1 class="fw-bold my-3">$40</h1>
+                            <p>
+                                Sample text. Click to select the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex gap-2 mt-5">
+                        <div style="width: 150px; height: 150px">
+                            <img width="100%" height="100%" style="object-fit: contain" src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/4b95edb108e251fab450e8c5/1.png" alt="" />
+                        </div>
+                        <div class="j_recipe_content">
+                            <h5 class="title">MEXICAN SALAD</h5>
+                            <h1 class="fw-bold my-3">$13</h1>
+                            <p>
+                                Sample text. Click to select the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-flex gap-2 mt-5">
+                        <div style="width: 150px; height: 150px">
+                            <img width="100%" height="100%" style="object-fit: contain" src="https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/2e7ae7dc043050209867a6a5/2.png" alt="" />
+                        </div>
+                        <div class="j_recipe_content">
+                            <h5 class="title">CLASSIC RICOTTA</h5>
+                            <h1 class="fw-bold my-3">$24</h1>
+                            <p>
+                                Sample text. Click to select the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //pricing  -->
+        <section class="j_pricing my-5 position-relative">
+            <div class="j_price_img_box h-100">
+                <img width="100%" height="100%" src="pricing_bg.jpeg" alt="" />
+            </div>
+            <div class="container w-75 mx-auto position-absolute start-0 end-0 j_pricing_container">
+                <div class="row bg-white">
+                    <div class="col-12 col-lg-6 my-3">
+                        <div class="p-2">
+                            <h4 class="fw-light mb-4 j_tracking_5">LASAGNIA</h4>
+                            <h4 class="fw-bold">$20</h4>
+                            <p>
+                                Sample text. Click to select the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+                        <div class="p-2 mt-3">
+                            <h4 class="fw-light mb-4 j_tracking_5">BOLOGNESE</h4>
+                            <h4 class="fw-bold">$12</h4>
+                            <p>
+                                Sample text. Click to select the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 my-3">
+                        <div class="p-2">
+                            <h4 class="fw-light mb-4 j_tracking_5">CARBONARA</h4>
+                            <h4 class="fw-bold">$45</h4>
+                            <p>
+                                Sample text. Click to select the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+                        <div class="p-2 mt-3">
+                            <h4 class="fw-light mb-4 j_tracking_5">CLASSIC RICOTTA</h4>
+                            <h4 class="fw-bold">$24</h4>
+                            <p>
+                                Sample text. Click to select the text box. Click again or double click to start editing the text.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Snacks-->
+        <section class="j_snacks container">
+            <div style="width: 90%" class="row mx-auto">
+                <div class="col-12 col-lg-6">
+                    <div class="px-4 w-75">
+                        <h1 class="j_fs_70 fw-bold">Salads and snacks</h1>
+                        <div style="width: 100%; height: 10px" class="bg-warning my-4"></div>
+                        <h5 class="fw-light w-75" c style="line-height: 50px; letter-spacing: 3px; font-size: 14px;">
+                            TACO PIZZA <br> CHICKEN FAJITA <br> BUFFALO CHICKEN <br> PEPPERONI
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div>
+                        <img width="100%" height="100%" src="snack_right_img.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script>
+        // targeting the hamburgar menu btn
+        document
+            .getElementById("toggle_sidebar")
+            .addEventListener("click", function() {
+                //logic
+                document.getElementsByTagName("aside")[0].classList.add("active");
+            });
+
+        document
+            .getElementById("toggle_sidebar_close")
+            .addEventListener("click", function() {
+                document.getElementsByTagName("aside")[0].classList.remove("active");
+            });
+    </script>
+</body>
+
+</html>

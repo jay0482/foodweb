@@ -1,0 +1,42 @@
+@media screen and (max-width:768px) {
+    .j_banner {
+        width: 100%;
+        bottom: auto;
+    }
+    .j_menus {
+        width: 50% !important;
+    }
+    .j_banner .j_dish {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    .j_content_shape {
+        left: 100px;
+    }
+    .j_content_shape p {
+        padding-bottom: 100px;
+    }
+    .j_banner .j_content {
+        width: 100%;
+        margin-top: 240px;
+    }
+    .j_banner .j_content h1 {
+        font-size: 50px !important;
+    }
+    .j_banner .j_content h5 {
+        font-size: 20px !important;
+    }
+    .j_banner .j_content p {
+        font-size: 15px !important;
+    }
+    .j_pricing_container {
+        top: 40%;
+    }
+}
+
+@media screen and (max-width:1358px) {
+    .j_price_img_box img {
+        object-position: 0px;
+    }
+}
